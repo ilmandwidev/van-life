@@ -14,8 +14,9 @@ export default function HostVanDetail() {
   const currentVan = useLoaderData();
   const activeStyles = {
     fontWeight: "bold",
-    textDecoration: "underline",
+    // textDecoration: "underline",
     color: "#161616",
+    backgroundColor: "PowderBlue",
   };
   // useEffect(() => {
   //   fetch(`/api/host/vans/${id}`)

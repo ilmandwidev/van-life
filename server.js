@@ -89,7 +89,7 @@ createServer({
     this.passthrough("https://firestore.googleapis.com/**");
 
     this.get("/vans", (schema, request) => {
-      return new Response(400, {}, { error: "Error fetching data" });
+      // return new Response(400, {}, { error: "Error fetching data" });
       return schema.vans.all();
     });
 
@@ -117,11 +117,7 @@ createServer({
       // in your database 😇
       const foundUser = schema.users.findBy({ email, password });
       if (!foundUser) {
-        return new Response(
-          401,
-          {},
-          { message: "No user with those credentials found!" }
-        );
+        return new Response(401, {}, { message: "User not found!" });
       }
 
       // At the very least, don't send the password back to the client 😅

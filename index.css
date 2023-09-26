@@ -58,6 +58,15 @@ header a:hover {
   text-decoration: underline;
 }
 
+header button {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 600;
+  padding: 1px 5px;
+  cursor: pointer;
+  /* background-color: blanchedalmond; */
+}
+
 main {
   margin-bottom: 84px;
 }
@@ -438,7 +447,7 @@ i[class*="van-type-"] {
 
 .host-van-detail-nav a:hover {
   color: #161616;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-weight: 700;
 }
 
@@ -542,3 +551,5 @@ i[class*="van-type-"] {
     display: block;
   }
 }
+
+/* button group */
