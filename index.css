@@ -68,7 +68,8 @@ header button {
 }
 
 main {
-  margin-bottom: 84px;
+  /* margin-bottom: 84px; */
+  padding-bottom: 50px;
 }
 
 footer {
