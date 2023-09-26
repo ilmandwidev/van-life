@@ -1,5 +1,18 @@
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+
 const Header = () => {
+  // let { isLoggin, setIsLoggin } = useState(null);
+
+  const navigate = useNavigate();
+  function fakeLogOut(request) {
+    localStorage.removeItem("loggedin");
+    const pathname = window.location.pathname;
+
+    navigate(`/login?redirectTo=${pathname}`);
+  }
+  const isLoggin = localStorage.getItem("loggedin");
+  console.log(isLoggin);
   return (
     <header>
       <Link to="/">#VANLIFE</Link>
@@ -22,6 +35,15 @@ const Header = () => {
         >
           Vans
         </NavLink>
+        {/* <Link to="login" className="login-link">
+          <img src="../assets/images/avatar-icon.png" className="login-icon" />
+        </Link> */}
+        <button
+          className={isLoggin === null ? "hidden" : ""}
+          onClick={fakeLogOut}
+        >
+          Logout
+        </button>
       </nav>
     </header>
   );

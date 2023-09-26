@@ -1,4 +1,8 @@
 const Reviews = () => {
-  return <div>Reviews</div>;
+  return (
+    <section>
+      <h1 className="host-vans-title">Halaman Review</h1>;
+    </section>
+  );
 };
 export default Reviews;

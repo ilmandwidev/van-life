@@ -1,5 +1,4 @@
-import { Outlet } from "react-router-dom";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const HostLayout = () => {
   const activeStyles = {
@@ -11,7 +10,7 @@ const HostLayout = () => {
     <>
       <nav className="host-nav">
         <NavLink
-          to="/host"
+          to="."
           end
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
