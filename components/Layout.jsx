@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 const Layout = () => {
   return (
-    <div className="site-wrapper" style={{ height: "100%" }}>
+    <div className="site-wrapper">
       <Header />
       <main>
         <Outlet />

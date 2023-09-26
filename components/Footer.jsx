@@ -1,4 +1,4 @@
 const Footer = () => {
-  return <footer>&#169; 2023 | Made with ❤️ |&nbsp;Powered by React</footer>;
+  return <footer>&#169; 2023 | Powered by React | Made with ❤️</footer>;
 };
 export default Footer;

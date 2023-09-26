@@ -121,8 +121,8 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  max-height: 350px;
-  /* height: 450px;  */
+  min-height: 350px;
+
   color: white;
   padding: 45px 23px;
 }
