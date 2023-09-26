@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div style={{ maxHeight: "50vh" }}>
+    <>
       <div className="home-container">
         <h1>You got the travel plans, we got the travel vans.</h1>
         <p>
@@ -22,6 +22,6 @@ export default function Home() {
           </center>
         </h2>
       </div>
-    </div>
+    </>
   );
 }
