@@ -31,6 +31,7 @@ import Login, {
 } from "./pages/Login";
 import { requireAuth } from "./utility/require-auth";
 import "./server";
+import CheckBrowser from "./pages/CheckBrowser";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -119,6 +120,8 @@ const router = createBrowserRouter(
           />
         </Route>
       </Route>
+      <Route path="check-browser" element={<CheckBrowser />} />
+
       <Route path="*" element={<NotFound />} />
     </Route>
   )
