@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { browserName, CustomView, isMobile } from "react-device-detect";
+import {
+  browserName,
+  CustomView,
+  isMobile,
+  MobileView,
+} from "react-device-detect";
 import chrome from "../src/images/chrome.png";
 export default function Home() {
   return (
@@ -23,7 +28,7 @@ export default function Home() {
           </center>
         </h2>
       </div>
-      {isMobile ? (
+      <MobileView>
         <div
           className="about-page-cta mobile"
           style={{ marginTop: "12pt", paddingBottom: 0 }}
@@ -35,7 +40,7 @@ export default function Home() {
             </center>
           </h2>
         </div>
-      ) : null}
+      </MobileView>
     </>
   );
 }
