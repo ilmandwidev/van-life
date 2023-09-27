@@ -23,7 +23,7 @@ export default function Home() {
           </center>
         </h2>
       </div>
-      {!isMobile ? (
+      {isMobile ? (
         <div
           className="about-page-cta mobile"
           style={{ marginTop: "12pt", paddingBottom: 0 }}
