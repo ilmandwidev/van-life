@@ -120,7 +120,7 @@ const router = createBrowserRouter(
           />
         </Route>
       </Route>
-      <Route path="check-browser" element={<CheckBrowser />} />
+      {/* <Route path="check-browser" element={<CheckBrowser />} /> */}
 
       <Route path="*" element={<NotFound />} />
     </Route>
