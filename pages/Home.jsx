@@ -1,11 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  browserName,
-  CustomView,
-  isMobile,
-  MobileView,
-} from "react-device-detect";
+import { isMobile } from "react-device-detect";
+
 import chrome from "../src/images/chrome.png";
 export default function Home() {
   return (
@@ -28,19 +24,20 @@ export default function Home() {
           </center>
         </h2>
       </div>
-      <MobileView>
+
+      {isMobile ? (
         <div
-          className="about-page-cta mobile"
+          className="about-page-cta "
           style={{ marginTop: "12pt", paddingBottom: 0 }}
         >
           <h2>
             <center>
-              Rekomendasi dibuka di Chrome{" "}
-              <img src={chrome} style={{ width: "24px" }} />
+              Rekomendasi dibuka di Chrome <br />
+              <img src={chrome} style={{ width: "32px", marginTop: "7pt" }} />
             </center>
           </h2>
         </div>
-      </MobileView>
+      ) : null}
     </>
   );
 }
