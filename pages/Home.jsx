@@ -31,7 +31,7 @@ export default function Home() {
           style={{
             marginTop: "12pt",
             paddingBottom: 0,
-            backgroundColor: "lightgrey",
+            backgroundColor: "transparent",
           }}
         >
           <h2>
