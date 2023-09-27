@@ -25,7 +25,7 @@ export default function Home() {
         </h2>
       </div>
 
-      {!isMobile ? (
+      {isMobile ? (
         <div
           className="about-page-cta "
           style={{
